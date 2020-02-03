@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--<item-->
+        <!--android:id="@+id/nav_home"-->
+        <!--android:icon="@drawable/ic_home_black_24dp"-->
+        <!--android:title="@string/nav_home" />-->
+    <!--<item-->
+        <!--android:id="@+id/nav_photos"-->
+        <!--android:icon="@drawable/ic_person_black_24dp"-->
+        <!--android:title="@string/nav_profile" />-->
+    <item
+        android:id="@+id/nav_viewMap"
+        android:icon="@drawable/kidmap_icon"
+        android:title="@string/nav_map" />
+
+    <item
+        android:id="@+id/nav_editProfile"
+        android:icon="@drawable/ic_person_black_24dp"
+        android:title="@string/nav_editProfile" />
+    <item
+        android:id="@+id/nav_movies"
+        android:icon="@drawable/ic_location_on_black_24dp"
+        android:title="@string/nav_location" />
+
+    <item
+        android:id="@+id/nav_settings"
+        android:icon="@drawable/ic_settings_black_24dp"
+        android:title="@string/nav_settings" />
+
+    <!--<item-->
+        <!--android:id="@+id/nav_notifications"-->
+        <!--android:icon="@drawable/ic_school_black_24dp"-->
+        <!--android:title="@string/nav_school" />-->
+
+    <item
+        android:id="@+id/nav_contact"
+        android:icon="@drawable/ic_local_phone_black_24dp"
+        android:title="@string/nav_contact" />
+
+    <item
+        android:id="@+id/nav_changePassword"
+        android:icon="@drawable/change_password_icon"
+        android:title="@string/nav_changePassword" />
+    <item
+        android:id="@+id/nav_logout"
+        android:icon="@drawable/loggout_icon"
+        android:title="@string/nav_logout" />
+
+</menu>

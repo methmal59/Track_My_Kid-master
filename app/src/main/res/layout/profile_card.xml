@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/home_card"
+    style="@style/CardViewStyle">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/title_bar"
+            android:background="@drawable/home_card_background"
+            android:padding="10dp"
+            android:elevation="10dp">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/img_profile"
+                android:scaleType="fitXY"
+                android:layout_margin="5dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rajesh gupta"
+                android:id="@+id/name"
+                android:layout_toRightOf="@+id/img_profile"
+                android:layout_below="@+id/edit"
+                android:textColor="@color/splashTitle"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:layout_marginLeft="15dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Father"
+                android:id="@+id/relation"
+                android:layout_below="@+id/name"
+                android:layout_toRightOf="@+id/img_profile"
+                android:layout_marginLeft="15dp"
+                android:textColor="#7d7d7d"
+                />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/edit"
+                app:srcCompat="@drawable/ic_edit_black_24dp"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title_bar"
+            app:srcCompat="@drawable/ic_local_phone_grey_24dp"
+            android:id="@+id/contact_image"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+91 903 335 6708"
+            android:id="@+id/contact_number"
+            android:layout_toRightOf="@+id/contact_image"
+            android:layout_below="@+id/title_bar"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contact"
+            android:layout_below="@+id/contact_number"
+            android:id="@+id/contact"
+            android:layout_toRightOf="@+id/contact_image"
+            android:layout_marginLeft="20dp"
+            android:textSize="11dp"
+            android:layout_marginTop="3dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_email_black_24dp"
+            android:id="@+id/mail_image"
+            android:layout_below="@+id/contact"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="rajeshgupta@gmail.com"
+            android:id="@+id/email_add"
+            android:layout_below="@+id/contact"
+            android:layout_toRightOf="@+id/mail_image"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mail"
+            android:layout_below="@+id/email_add"
+            android:layout_toRightOf="@+id/mail_image"
+            android:layout_marginLeft="20dp"
+            android:textSize="11dp"
+            android:layout_marginTop="3dp"
+            android:id="@+id/email"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="12dp"
+            android:layout_below="@+id/email"></View>
+
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

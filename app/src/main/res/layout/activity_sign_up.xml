@@ -1,0 +1,257 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <ImageView
+                android:id="@+id/backButtonSignup"
+                android:layout_width="48dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="305dp"
+                android:layout_marginRight="305dp"
+                app:srcCompat="?attr/homeAsUpIndicator" />
+        </android.support.design.widget.AppBarLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/label_name"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/logo"
+            android:layout_marginTop="40dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="0dp"
+                android:orientation="vertical"
+                android:padding="?attr/dialogPreferredPadding">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/colorPrimaryDark"
+                    app:hintAnimationEnabled="false">
+
+                    <EditText
+                        android:id="@+id/parentName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/signUp_parentName"
+                        android:inputType="textPersonName" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/colorPrimaryDark">
+
+                    <EditText
+                        android:id="@+id/email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/signUp_usernameEmail"
+                        android:inputType="text"/>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/colorPrimaryDark">
+
+                    <EditText
+                        android:id="@+id/password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/signUp_password"
+                        android:inputType="textPassword" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/colorPrimaryDark">
+
+                    <EditText
+                        android:id="@+id/confirmPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/signUp_confirmPassword"
+                        android:inputType="textPassword"/>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/colorPrimaryDark">
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="132dp"
+                        android:layout_height="wrap_content"
+                        android:text="Vehicle Number"
+                        android:layout_marginTop="15dp"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                        android:textColor="@color/colorPrimaryDark"/>
+
+                    <EditText
+                        android:id="@+id/parentMobile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="@string/signUp_parentMobile"
+                        android:inputType="phone" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/van1"
+                            android:layout_width="10dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hint="A"
+                            android:inputType="textCapCharacters"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:maxLength="1"/>
+
+                        <EditText
+                            android:id="@+id/van2"
+                            android:layout_width="10dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hint="A"
+                            android:inputType="textCapCharacters"
+                            android:maxLength="1"
+                            android:textColor="@color/colorPrimaryDark"/>
+
+                        <EditText
+                            android:id="@+id/van3"
+                            android:layout_width="10dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hint="A"
+                            android:inputType="textCapCharacters"
+                            android:maxLength="1"
+                            android:textColor="@color/colorPrimaryDark"/>
+
+                        <TextView
+                            android:id="@+id/vanDash"
+                            android:layout_width="1dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:inputType="none"
+                            android:text="-"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                            android:visibility="visible"
+                            android:maxLength="1"
+                            android:textColor="@color/colorPrimaryDark"/>
+
+                        <EditText
+                            android:id="@+id/van4"
+                            android:layout_width="10dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hint="1"
+                            android:inputType="phone"
+                            android:maxLength="1"
+                            android:textColor="@color/colorPrimaryDark"/>
+
+                        <EditText
+                            android:id="@+id/van5"
+                            android:layout_width="10dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hint="1"
+                            android:inputType="phone"
+                            android:maxLength="1"
+                            android:textColor="@color/colorPrimaryDark"/>
+
+                        <EditText
+                            android:id="@+id/van6"
+                            android:layout_width="10dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hint="1"
+                            android:inputType="phone"
+                            android:maxLength="1"
+                            android:textColor="@color/colorPrimaryDark"/>
+
+                        <EditText
+                            android:id="@+id/van7"
+                            android:layout_width="10dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hint="1"
+                            android:inputType="phone"
+                            android:maxLength="1"
+                            android:textColor="@color/colorPrimaryDark"/>
+                    </LinearLayout>
+
+                    <!--<EditText-->
+                    <!--android:id="@+id/vanNumber"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:hint="@string/signUp_vanNumber"-->
+                    <!--android:inputType="textPostalAddress"/>-->
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/button_signup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:enabled="true"
+                    android:onClick="onSignUp"
+                    android:text="@string/app_signup"
+                    android:background="@color/colorPrimary"/>
+
+                <TextView
+                    android:id="@+id/goToLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Already have an Account?"
+                    android:textColor="@color/colorPrimaryDark" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</ScrollView>

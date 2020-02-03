@@ -1,0 +1,141 @@
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.percent.PercentRelativeLayout
+        android:id="@+id/mapContainer"
+        android:layout_width="match_parent"
+        app:layout_heightPercent="45%">
+
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_above="@+id/layout"
+            android:transitionName="@string/fragment_image_trans"
+            app:layout_heightPercent="40%" />
+
+        <android.support.percent.PercentRelativeLayout
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_above="@+id/student_name"
+            android:layout_marginTop="-35dp"
+            app:layout_heightPercent="60%">
+
+            <RelativeLayout
+                android:id="@+id/locationContainer"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal"
+                app:layout_widthPercent="35%">
+
+                <ImageView
+                    android:id="@+id/location_symbol"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    app:srcCompat="@drawable/ic_location_on_black_24dp" />
+
+                <TextView
+                    android:id="@+id/view_in_map"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/location_symbol"
+                    android:text="View in Map"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/student_image"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/locationContainer"
+                android:transitionName="@string/activity_image_trans"
+                app:layout_widthPercent="30%"/>
+
+            <RelativeLayout
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/student_image"
+                android:gravity="center"
+                android:orientation="horizontal"
+                app:layout_widthPercent="35%">
+
+                <ImageView
+                    android:id="@+id/status_colour"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/circle" />
+
+                <TextView
+                    android:id="@+id/status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="4dp"
+                    android:layout_toRightOf="@+id/status_colour"
+                    android:text="In Bus"
+                    android:textSize="12sp"
+                    android:transitionName="@string/activity_text_trans"
+
+                    />
+
+            </RelativeLayout>
+
+        </android.support.percent.PercentRelativeLayout>
+
+        <TextView
+            android:id="@+id/student_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/school"
+            android:gravity="center"
+            android:padding="4dp"
+            android:text="Sachin Parekh"
+            android:textColor="#000"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:transitionName="@string/activity_text_trans" />
+
+        <TextView
+            android:id="@+id/school"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:text="Class 10th B Division"
+            android:transitionName="@string/activity_text_trans" />
+
+    </android.support.percent.PercentRelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/mapContainer"
+        android:orientation="vertical"
+        app:layout_heightPercent="55%">
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tab_host"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:transitionName="@string/activity_mixed_trans"
+            app:tabGravity="center"
+            app:tabIndicatorColor="@color/colorPrimary">
+
+        </android.support.design.widget.TabLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/primaryVeryDark"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    </LinearLayout>
+
+</android.support.percent.PercentRelativeLayout>

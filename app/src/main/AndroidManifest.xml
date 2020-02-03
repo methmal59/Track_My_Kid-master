@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.project.dreamsquad.trackmykid">
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <permission
+        android:name="com.project.dreamsquad.trackmykid.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="com.project.verbosetech.bustracker.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /> <!-- Required to show current location -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> <!-- Required OpenGL ES 2.0. for Maps V2 -->
+
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true"
+        />
+
+
+    <application
+        android:name="com.project.dreamsquad.trackmykid.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:networkSecurityConfig="@xml/network_security_config">
+
+
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+        android:value="@string/google_maps_key" />
+
+        <activity
+            android:name="com.project.dreamsquad.trackmykid.MapsActivity"
+            android:label="@string/title_activity_maps"></activity>
+
+        <!--<meta-data-->
+            <!--android:name="com.google.android.actions"-->
+            <!--android:resource="@xml/ic_stat_notify"-->
+            <!--/>-->
+
+        <activity android:name="com.project.dreamsquad.trackmykid.activity.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.project.dreamsquad.trackmykid.activity.MainActivity"
+            android:windowSoftInputMode="stateHidden|adjustResize"
+            android:configChanges="orientation"/>
+        <activity
+            android:name="com.project.dreamsquad.trackmykid.activity.StudentTrackingActivity"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name="com.project.dreamsquad.trackmykid.activity.ViewInMapActivity"
+            android:windowSoftInputMode="stateHidden|adjustResize" /> <!-- android:name=".activity.SignInActivity" -->
+        <!-- android:windowSoftInputMode="stateHidden|adjustResize" /> -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="google_analytics_adid_collection_enabled"
+            android:value="false" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value=
+                "@string/notification_channel_id" /> <!-- <meta-data -->
+
+        <!--<service android:name="com.project.dreamsquad.trackmykid.activity.MyFirebaseInstanceIDService">-->
+            <!--<intent-filter>-->
+                <!--<action android:name="com.google.firebase.INSTANCE_ID_EVENT" />-->
+            <!--</intent-filter>-->
+        <!--</service>-->
+
+        <!--<service android:name=".MyFirebaseMessageService">-->
+            <!--<intent-filter>-->
+                <!--<action android:name="com.google.firebase.MESSAGING_EVENT"></action>-->
+            <!--</intent-filter>-->
+        <!--</service>-->
+
+
+
+        <activity android:name="com.project.dreamsquad.trackmykid.activity.LoginActivity" />
+        <!--<activity android:name=".LoadMap" />-->
+        <activity android:name="com.project.dreamsquad.trackmykid.fragments.DevicesActivity" />
+        <activity android:name="com.project.dreamsquad.trackmykid.activity.MainActivityOld" />
+        <activity android:name="com.project.dreamsquad.trackmykid.others.SignUp" />
+        <!--<activity android:name="com.project.dreamsquad.trackmykid.activity.ChangePassword" />-->
+        <!--<activity android:name="com.project.dreamsquad.trackmykid.activity.EditProfileInfo" />-->
+        <activity android:name="com.project.dreamsquad.trackmykid.SearchSchool" />
+        <!--<activity android:name="com.project.dreamsquad.trackmykid.fragments.PickUp" />-->
+        <activity android:name="com.project.dreamsquad.trackmykid.others.MainApplication" />
+        <!--<activity android:name="com.project.dreamsquad.trackmykid.DropOff" />-->
+
+
+
+    </application>
+
+</manifest>

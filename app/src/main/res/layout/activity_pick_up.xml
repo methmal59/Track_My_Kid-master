@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.PickUp">
+
+    <!--<android.support.design.widget.CoordinatorLayout-->
+        <!--android:id="@+id/myCoordinatorLayoutPickup"-->
+        <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+        <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent">-->
+    <!--</android.support.design.widget.CoordinatorLayout>-->
+
+
+    <LinearLayout
+        android:id="@+id/tab_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:weightSum="100"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        app:layout_constraintBottom_toTopOf="@id/textView"
+        >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="50"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/pick_up"
+                style="@style/MyButtonStyle1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:minWidth="130dp"
+                android:minHeight="30dp"
+                android:paddingStart="25dp"
+                android:paddingLeft="15dp"
+                android:paddingEnd="25dp"
+                android:paddingRight="15dp"
+                android:text="Pick up"
+                android:textAllCaps="false" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="50"
+            android:gravity="center_horizontal">
+
+
+            <Button
+                android:id="@+id/dropBtn"
+                style="@style/MyButtonStyle2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:drawablePadding="-12dp"
+                android:minWidth="130dp"
+                android:minHeight="30dp"
+                android:paddingStart="25dp"
+                android:paddingLeft="25dp"
+                android:paddingEnd="25dp"
+                android:paddingRight="25dp"
+                android:text="Drop"
+                android:textAllCaps="false" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--<fragment-->
+        <!--android:id="@+id/place_autocompletePickupp"-->
+        <!--android:name="com.google.android.gms.location.places.ui.PlaceAutocompleteFragment"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="40dp"-->
+        <!--android:layout_marginBottom="8dp"-->
+        <!--app:layout_constraintBottom_toTopOf="@+id/mapPickUp"-->
+        <!--app:layout_constraintEnd_toEndOf="parent"-->
+        <!--app:layout_constraintHorizontal_bias="1.0"-->
+        <!--app:layout_constraintStart_toStartOf="parent"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/tab_bar"-->
+        <!--app:layout_constraintVertical_bias="0.0" />-->
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="@string/locationHint"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintBottom_toBottomOf="@id/tab_bar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/mapPickUp"
+        app:layout_constraintVertical_bias="0.0"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/tab_bar"
+        app:layout_constraintBottom_toTopOf="@id/mapPickUp"/>
+
+    <fragment
+        android:id="@+id/mapPickUp"
+        class="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/savePickLocation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView"/>
+    <Button
+        android:id="@+id/savePickLocation"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimaryDark"
+        android:drawableRight="@drawable/selector_arrow_right"
+        android:text="@string/savePickUpLocation"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/place_autocomplete"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+    <!--<Button-->
+        <!--android:id="@+id/continuee"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_weight="0.5"-->
+        <!--android:background="@color/colorAccent"-->
+        <!--android:drawableRight="@drawable/selector_arrow_right"-->
+        <!--android:gravity="center"-->
+        <!--android:padding="16dp"-->
+        <!--android:text="Continue"-->
+        <!--android:textAllCaps="false"-->
+        <!--android:textColor="#fff"-->
+        <!--android:textSize="16sp"-->
+        <!--android:textStyle="bold" />-->
+
+
+</android.support.constraint.ConstraintLayout>

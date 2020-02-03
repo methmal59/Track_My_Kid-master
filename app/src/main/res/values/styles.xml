@@ -1,0 +1,70 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="MyCustomTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="textAllCaps">false</item>
+    </style>
+
+    <style name="MyButtonStyle1" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:drawableLeft">@drawable/ic_pickup_active</item>
+        <item name="android:background">@drawable/pickup_bkgrnd</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+    <style name="MyButtonStyle2" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:drawableLeft">@drawable/ic_drop_down_inactive</item>
+        <item name="android:background">@drawable/drop_bkgrnd</item>
+        <item name="android:textColor">#fff</item>
+    </style>
+
+    <!--<style name="MyTransparentDialog" parent="@android:style/Theme.Material.Dialog">-->
+        <!--<item name="android:windowBackground">@drawable/alert_backgrnd</item>-->
+        <!--<item name="android:background">@android:color/transparent</item>-->
+    <!--</style>-->
+
+    <style name="MyDialogTheme" parent="android:Theme.Dialog">
+        <!-- Fill the screen -->
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+
+        <!-- No backgrounds, titles or window float -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">false</item>
+
+
+        <!-- Just to prove it's working -->
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+
+
+    <style name="CardViewStyle" parent="android:Widget.TextView">
+        <item name="android:foreground">@drawable/selector_bg_card</item>
+        <item name="cardCornerRadius">@dimen/card_corner_radius</item>
+        <item name="cardElevation">@dimen/card_elevation</item>
+        <item name="cardPreventCornerOverlap">false</item>
+        <item name="cardUseCompatPadding">true</item>
+    </style>
+
+    <style name="MyEditTextTheme">
+        <!-- Used for the bottom line when not selected / focused -->
+        <item name="colorControlNormal">#FFF</item>
+        <!-- colorControlActivated & colorControlHighlight use the colorAccent color by default -->
+    </style>
+
+</resources>

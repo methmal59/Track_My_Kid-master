@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            android:background="@color/colorPrimary"
+            android:id="@+id/tab_bar"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:weightSum="100"
+            >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="50"
+                android:gravity="center_horizontal">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pick up"
+                android:textAllCaps="false"
+                android:id="@+id/pick_up"
+                android:paddingRight="15dp"
+                android:paddingLeft="15dp"
+                android:minHeight="30dp"
+                android:layout_centerVertical="true"
+                android:minWidth="130dp"
+                android:paddingStart="25dp"
+                android:paddingEnd="25dp"
+                style="@style/MyButtonStyle1"
+                />
+
+            </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="50"
+        android:gravity="center_horizontal">
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Drop"
+                android:textAllCaps="false"
+                android:id="@+id/drop"
+                android:drawablePadding="-12dp"
+                android:paddingRight="25dp"
+                android:paddingLeft="25dp"
+                android:minHeight="30dp"
+                android:layout_centerVertical="true"
+                android:minWidth="130dp"
+                android:paddingStart="25dp"
+                android:paddingEnd="25dp"
+                style="@style/MyButtonStyle2"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/frame_location"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tab_bar"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"></FrameLayout>
+
+</RelativeLayout>

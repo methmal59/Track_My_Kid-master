@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <fragment
+        android:id="@+id/map3"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="55dp"
+        android:transitionName="@string/fragment_image_trans"/>
+
+
+
+    <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="@color/splashTitle"-->
+        <!--android:layout_gravity="bottom"-->
+        <!--android:id="@+id/name_image_layout"-->
+        <!--android:layout_marginBottom="48dp"-->
+        <!--&gt;-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:weightSum="100"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:id="@+id/name_layout"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:layout_marginLeft="130dp">-->
+
+        <!--<TextView-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/student_name"-->
+            <!--android:text="Sachin Parekh"-->
+            <!--android:layout_weight="65"-->
+            <!--android:textStyle="bold"-->
+            <!--android:textSize="18dp"-->
+            <!--android:textColor="#000"-->
+            <!--android:transitionName="@string/activity_text_trans"/>-->
+
+        <!--<ImageView-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:src="@drawable/circle"-->
+            <!--android:id="@+id/circle"-->
+            <!--android:layout_weight="5"-->
+            <!--android:layout_gravity="center_vertical"-->
+            <!--/>-->
+
+        <!--<TextView-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="In Bus"-->
+            <!--android:id="@+id/status"-->
+            <!--android:layout_weight="25"-->
+            <!--android:layout_gravity="center_vertical"-->
+            <!--android:layout_marginLeft="3dp"-->
+            <!--android:textSize="12dp"-->
+            <!--android:transitionName="@string/activity_text_trans"/>-->
+
+        <!--</LinearLayout>-->
+
+        <!--<TextView-->
+
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/school"-->
+            <!--android:text="Class 10th B Division"-->
+            <!--android:layout_below="@+id/name_layout"-->
+            <!--android:textSize="13dp"-->
+            <!--android:layout_marginLeft="130dp"-->
+            <!--android:transitionName="@string/activity_text_trans"/>-->
+
+    <!--</RelativeLayout>-->
+
+    <!--<android.support.design.widget.TabLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/tab_host"-->
+        <!--android:layout_gravity="bottom"-->
+        <!--android:background="@color/splashTitle"-->
+        <!--app:tabGravity="center"-->
+        <!--android:transitionName="@string/activity_mixed_trans"-->
+        <!--app:tabIndicatorColor="@color/colorPrimary"-->
+        <!--&gt;-->
+    <!--</android.support.design.widget.TabLayout>-->
+
+    <!--<android.support.v4.view.ViewPager-->
+        <!--android:id="@+id/viewpager"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--app:layout_behavior="@string/appbar_scrolling_view_behavior"-->
+        <!--android:layout_below="@+id/tab_host"-->
+        <!--android:visibility="gone"-->
+        <!--android:layout_gravity="bottom"/>-->
+
+    <!--<ImageView-->
+        <!--android:layout_width="100dp"-->
+        <!--android:layout_height="100dp"-->
+        <!--android:id="@+id/student_image"-->
+        <!--android:src="@drawable/image_bckgrnd"-->
+        <!--app:layout_anchor="@+id/name_image_layout"-->
+        <!--android:layout_marginLeft="20dp"-->
+        <!--android:transitionName="@string/activity_image_trans"-->
+        <!--/>-->
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar8"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp"
+        app:contentInsetStartWithNavigation="0dp">
+
+        <!--<Button-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="right"-->
+            <!--android:id="@+id/edit_location"-->
+            <!--android:textSize="15sp"-->
+            <!--android:background="@null"-->
+            <!--android:layout_alignParentEnd="true"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:textColor="#FFF"-->
+            <!--android:text="Edit Location"-->
+            <!--android:textAllCaps="false"-->
+            <!--android:layout_marginRight="10dp"/>-->
+
+    </android.support.v7.widget.Toolbar>
+
+</android.support.design.widget.CoordinatorLayout>

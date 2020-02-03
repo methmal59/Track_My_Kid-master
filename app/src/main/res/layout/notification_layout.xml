@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/reminder"
+        android:text="Drop Reminder"
+        android:layout_marginLeft="15dp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bus_status"
+        android:text="Bus is about to reach at drop location."
+        android:layout_marginLeft="15dp"
+        android:layout_below="@+id/reminder"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/school"
+        android:text="2.0 km away from shivaji park"
+        android:layout_marginLeft="15dp"
+        android:layout_below="@+id/bus_status"
+        android:layout_marginBottom="10dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/day"
+        android:text="4:30pm"
+        android:layout_alignParentRight="true"
+        android:layout_alignBottom="@+id/school"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="15dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#999999"
+        android:layout_below="@+id/school">
+
+    </View>
+
+
+</RelativeLayout>

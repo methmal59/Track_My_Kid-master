@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary"
+    android:weightSum="100"
+    android:paddingTop="10dp"
+    >
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/layout1"
+        android:layout_toLeftOf="@+id/layout2"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentLeft="true"
+        android:layout_weight="25"
+        android:layout_marginRight="10dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/textheights"
+            android:text="Reminder1"
+            android:id="@+id/reminder1"
+            android:gravity="right"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            android:textSize="@dimen/textSize"
+            />
+
+        <TextView
+            android:id="@+id/time1"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/textheights"
+            android:layout_below="@+id/reminder1"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            android:textSize="@dimen/textSize"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/time2"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/textheights"
+            android:layout_below="@+id/time1"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            android:textSize="@dimen/textSize"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/time3"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/textheights"
+            android:layout_below="@+id/time2"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            android:textSize="@dimen/textSize"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/reminder2"
+            android:layout_width="wrap_content"
+            android:layout_height="37dp"
+            android:layout_below="@+id/time3"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            android:text="Reminder2"
+            android:textSize="@dimen/textSize" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/textheights"
+            android:layout_below="@+id/reminder2"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            android:textSize="@dimen/textSize"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout2"
+        android:orientation="vertical"
+        android:layout_toLeftOf="@+id/layout3"
+        android:layout_marginRight="5dp"
+        android:layout_weight="10"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="3dp"
+
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:orientation="vertical"
+           >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/reminder_icon"
+            app:srcCompat="@drawable/ic_remider"
+            />
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#000"
+            android:id="@+id/line"
+            android:layout_gravity="center_horizontal">
+        </View>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:orientation="vertical"
+            >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_pickup_rem"
+            android:id="@+id/location_icon2" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="8dp"
+            android:background="#000"
+            android:id="@+id/line2"
+            android:layout_gravity="center_horizontal"
+
+            >
+        </View>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/dot1"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/circle_white"
+                />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#000"
+                android:id="@+id/lin2"
+                android:layout_gravity="center_horizontal"
+                >
+            </View>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="51dp"
+            android:orientation="vertical"
+            >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_school_rem"
+            android:id="@+id/school_icon3" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="8dp"
+                android:background="#000"
+                android:id="@+id/line3"
+                android:layout_gravity="center_horizontal"
+                >
+            </View>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/dot2"
+                android:layout_gravity="center_horizontal"
+                app:srcCompat="@drawable/circle_white"
+                android:visibility="gone"
+                />
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#000"
+                android:id="@+id/lin3"
+                android:layout_gravity="center_horizontal"
+                >
+            </View>
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:orientation="vertical"
+            >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/reminder_icon2"
+            android:layout_below="@+id/toolbar"
+            app:srcCompat="@drawable/ic_remider"
+            />
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#000"
+            android:id="@+id/line4"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="-5dp">
+        </View>
+            </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_drop_rem"
+            android:id="@+id/location_icon3"
+
+
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentRight="true"
+        android:id="@+id/layout3"
+        android:layout_marginTop="5dp"
+        android:layout_weight="65"
+        >
+
+        <TextView
+            android:id="@+id/reminder1Location"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/textheights"
+            android:textSize="@dimen/textSize"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/textheights"
+            android:orientation="horizontal"
+          >
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pick up"
+                android:textStyle="bold"
+                android:textColor="@color/splashTitle"
+                android:textSize="@dimen/textSize"
+                />
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="10dp"-->
+                <!--android:text="Your House"-->
+                <!--android:textSize="@dimen/textSize" />-->
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/schoolName"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/textheights"
+            android:layout_marginTop="18dp"
+            android:textSize="@dimen/textSize"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/locationDrop"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/textheights"
+            android:layout_marginTop="15dp"
+            android:textSize="@dimen/textSize"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/textheights"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Drop Off"
+                android:textColor="@color/splashTitle"
+                android:textStyle="bold"
+                android:textSize="@dimen/textSize"
+                />
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="10dp"-->
+                <!--android:text="Your House"-->
+                <!--android:textSize="@dimen/textSize" />-->
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+    </ScrollView>

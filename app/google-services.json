@@ -1,0 +1,75 @@
+{
+  "project_info": {
+    "project_number": "40681582229",
+    "firebase_url": "https://trackmykid1.firebaseio.com",
+    "project_id": "trackmykid1",
+    "storage_bucket": "trackmykid1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:40681582229:android:b709b5d28e5762b679f59c",
+        "android_client_info": {
+          "package_name": "com.project.dreamsquad.trackmykid"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "40681582229-qp5luhlad9g41cs4c1kfd7vpvvnt18qj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZsyZcXNKIMZ-VPhkJwWqEp-pZM3vI9wI"
+        },
+        {
+          "current_key": "AIzaSyAOjD2BjQlaMlVpkT__VBTsX5gRb3EVSUg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "40681582229-qp5luhlad9g41cs4c1kfd7vpvvnt18qj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:40681582229:android:f4be63817bc0f3a0",
+        "android_client_info": {
+          "package_name": "com.project.verbosetech.bustracker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "40681582229-qp5luhlad9g41cs4c1kfd7vpvvnt18qj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZsyZcXNKIMZ-VPhkJwWqEp-pZM3vI9wI"
+        },
+        {
+          "current_key": "AIzaSyAOjD2BjQlaMlVpkT__VBTsX5gRb3EVSUg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "40681582229-qp5luhlad9g41cs4c1kfd7vpvvnt18qj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

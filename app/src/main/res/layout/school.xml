@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/description">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/image_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:src="@drawable/school" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/image_layout"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="25dp"
+            android:text="St Xavier's High School"
+            android:textColor="#fff"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/image_layout"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="20dp"
+            android:text="History of school"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/description"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:text="St. Xavier’s School is run by the Society of Jesus, an international Christian religious order that follows the teachings of the Roman Catholic Church, founded by Ignatius of Loyola in 1540. The members of the Society are popularly known as the Jesuits. The Society is headquartered in Rome. The Jesuits are primarily known for their work in education (like founding schools, colleges, universities and seminaries), intellectual research, and cultural pursuits, and for their missionary efforts in human rights and social justice. They are one of the largest educational bodies in the world. From their humble beginning in Europe in 1540 they have etched their presence in 112 nations on six continents."
+            android:textSize="14dp" />
+
+
+    </RelativeLayout>
+
+</ScrollView>

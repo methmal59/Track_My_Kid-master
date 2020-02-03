@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primaryVeryDark"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/primaryVeryDark"
+    android:weightSum="100"
+    android:layout_below="@+id/bar_layout">
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/layout1"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentLeft="true"
+        android:layout_weight="25"
+        android:layout_marginRight="10dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/textheights"
+            android:text="Picked"
+            android:id="@+id/reminder1"
+            android:gravity="right"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            android:textSize="@dimen/textSize"
+            android:textColor="@color/splashTitle"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/textheights"
+            android:text="Reached"
+            android:layout_below="@+id/reminder1"
+            android:id="@+id/time1"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            android:textSize="@dimen/textSize"
+            android:textColor="@color/splashTitle"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/textheights"
+            android:text="Left"
+            android:layout_below="@+id/time3"
+            android:textSize="@dimen/textSize"
+            android:id="@+id/reminder2"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            android:textColor="@color/splashTitle"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/textheights"
+            android:text="Dropped"
+            android:layout_below="@+id/reminder2"
+            android:textSize="@dimen/textSize"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            android:textColor="@color/splashTitle"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout2"
+        android:orientation="vertical"
+        android:layout_toLeftOf="@+id/layout3"
+        android:layout_marginRight="5dp"
+        android:layout_weight="10"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:orientation="vertical"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/reminder_icon"
+                app:srcCompat="@drawable/ic_picked"
+                />
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#000"
+                android:id="@+id/line"
+                android:layout_gravity="center_horizontal">
+            </View>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:orientation="vertical"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_reached"
+                android:id="@+id/school_icon3" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#000"
+                android:id="@+id/line3"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="-5dp"
+                >
+            </View>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:orientation="vertical"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/reminder_icon2"
+                android:layout_below="@+id/toolbar"
+                app:srcCompat="@drawable/ic_reached"
+                />
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#000"
+                android:id="@+id/line4"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="-5dp"
+                android:layout_marginTop="-5dp">
+            </View>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_dropper"
+            android:id="@+id/location_icon3"
+
+
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentRight="true"
+        android:id="@+id/layout3"
+        android:layout_marginTop="5dp"
+        android:layout_weight="65"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/textheights"
+            android:orientation="horizontal"
+            >
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="8:00 AM"
+                android:textStyle="bold"
+                android:textColor="@color/splashTitle"
+                android:textSize="@dimen/textSize"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Shivaji Park,Shivaji Park,Shivaji Park,New Delhi"
+                android:textSize="@dimen/textSize"
+                android:layout_marginLeft="10dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/textheights"
+            android:orientation="horizontal"
+            >
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="9:05 AM"
+                android:textStyle="bold"
+                android:textColor="@color/splashTitle"
+                android:textSize="@dimen/textSize"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="At School"
+                android:textSize="@dimen/textSize"
+                android:layout_marginLeft="10dp"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/textheights"
+            android:orientation="horizontal"
+            >
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4:00 PM"
+                android:textStyle="bold"
+                android:textColor="@color/splashTitle"
+                android:textSize="@dimen/textSize"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="From School"
+                android:textSize="@dimen/textSize"
+                android:layout_marginLeft="10dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/textheights"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5:10 PM"
+                android:textColor="@color/splashTitle"
+                android:textStyle="bold"
+                android:textSize="@dimen/textSize"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Golden Circle,Old Street,Delhi"
+                android:layout_marginLeft="10dp"
+                android:textSize="@dimen/textSize"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+</ScrollView>

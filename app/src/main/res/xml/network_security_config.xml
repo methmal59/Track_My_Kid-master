@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">trackmykid.info</domain>
+        <domain includeSubdomains="true">trackmykid.info:8082</domain>
+        <domain includeSubdomains="true">5.189.154.215</domain>
+        <!-- the domain you are using for api network call -->
+    </domain-config>
+</network-security-config>
